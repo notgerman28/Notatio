@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notatio. | Configuración</title>
+    <link rel="stylesheet" href="Styles/settings.css">
+</head>
+
+<body id="main-body">
+    <!-- Navbar superior -->
+    <div class="navbar">
+        <div class="logo">
+            Notatio.
+        </div>
+        <div class="avatar">
+            <span class="icon">
+                <img src="Assets/icons/user.svg" alt="">
+            </span>
+        </div>
+    </div>
+
+    <!-- Menú lateral -->
+    <div class="sidebar">
+        <div class="menu-top">
+            <div class="user-info">
+                Docente: Usuario
+            </div>
+            <nav>
+                <a href="index-app.html" class="menu-item">
+                    <span class="icon"><img src="Assets/icons/home.svg" alt="">
+                    </span> Inicio
+                </a>
+                <a href="dashboard.html" class="menu-item">
+                    <span class="icon">
+                        <img src="Assets/icons/dashboard.svg" alt="">
+                    </span> Panel de control
+                </a>
+                <a href="grades-table.html" class="menu-item">
+                    <span class="icon">
+                        <img src="Assets/icons/grade.svg" alt="">
+                    </span> Calificaciones
+                </a>
+                <a href="#" class="menu-item" id="classes-menu">
+                    <span class="icon">
+                        <img src="Assets/icons/books.svg" alt="">
+                    </span> Clases
+                    <span class="dropdown-icon">▼</span>
+                </a>
+                <div class="submenu" id="classes-submenu">
+                    <a href="#">Inglés 🇬🇧</a>
+                    <a href="grades-table.html">Biología 🌿</a>
+                    <a href="#">Educación Física 🏀</a>
+                </div>
+                <a href="help-center.html" class="menu-item">
+                    <span class="icon">
+                        <img src="Assets/icons/help.svg" alt="">
+                    </span> Ayuda
+                </a>
+            </nav>
+        </div>
+
+        <div class="bottom-menu">
+            <a href="settings.html" class="menu-item">
+                <span class="icon">
+                    <img src="Assets/icons/settings.svg" alt="">
+                </span> Configuración
+            </a>
+            <a href="#" class="menu-item">
+                <span class="icon">
+                    <img src="Assets/icons/notification.svg" alt="">
+                </span> Notificaciones
+                <span class="badge">10</span>
+            </a>
+        </div>
+    </div>
+
+    <!-- Contenido principal -->
+    <div class="content">
+        <h1>Configuración</h1>
+        <div class="config-container">
+            <div class="config-row">
+                <div class="config-item inline">
+                    <label for="dark-mode">Modo oscuro</label>
+                    <div class="toggle-switch">
+                        <input type="checkbox" id="dark-mode" class="toggle-input">
+                        <label for="dark-mode" class="toggle-label"></label>
+                    </div>
+                </div>
+                <div class="config-item inline">
+                    <label for="language">Idioma</label>
+                    <select id="language">
+                        <option value="Español Latino">Español Latino</option>
+                        <option value="Español Castellano">Español Castellano</option>
+                    </select>
+                </div>
+            </div>
+            <div class="config-item">
+                <label for="new-password">Cambiar contraseña:</label>
+                <input type="password" id="new-password" placeholder="Nueva contraseña">
+            </div>
+            <div class="config-item">
+                <label for="confirm-password">Confirmar contraseña:</label>
+                <input type="password" id="confirm-password" placeholder="Confirmar contraseña">
+            </div>
+            <div class="config-item">
+                <label for="new-username">Cambiar Nombre de usuario:</label>
+                <input type="text" id="new-username" placeholder="Nuevo nombre de usuario">
+            </div>
+            <div class="config-row">
+                <div class="config-item">
+                    <label for="timezone">Zona horaria</label>
+                    <select id="timezone">
+                        <option value="GMT-04 RD">(GMT-04:00) La Paz </option>
+                        <option value="GMT-03 Brasilia">(GMT-03:00) Brasilia</option>
+                        <option value="GMT-09 Alaska">(GMT-09:00) Alaska</option>
+                    </select>
+                </div>
+                <div class="config-item">
+                    <button id="reset-config">Restablecer Configuración</button>
+                </div>
+            </div>
+        </div>
+        <div id="notification" class="notification"></div>
+    </div>
+    <script src="Scripts/settings.js"></script>
+</body>
+
+</html>

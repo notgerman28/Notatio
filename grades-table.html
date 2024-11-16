@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notatio | Calificaciones</title>
+    <link rel="stylesheet" href="Styles/grades-table.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.17.0/xlsx.full.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.5/FileSaver.min.js"></script>
+</head>
+
+<body>
+    <!-- Navbar superior -->
+    <div class="navbar">
+        <div class="logo">
+            Notatio.
+        </div>
+        <div class="avatar">
+            <span>
+                <img src="Assets/icons/user.svg" alt="" srcset="">
+            </span>
+        </div>
+    </div>
+
+    <!-- Menú lateral -->
+    <div class="sidebar">
+        <div class="menu-top">
+            <div class="user-info">
+                Docente: Usuario
+            </div>
+            <nav>
+                <a href="index-app.html" class="menu-item">
+                    <span class="icon"><img src="Assets/icons/home.svg" alt="" srcset="">
+                    </span> Inicio
+                </a>
+                <a href="dashboard.html" class="menu-item">
+                    <span class="icon">
+                        <img src="Assets/icons/dashboard.svg" alt="" srcset="">
+                    </span> Panel de control
+                </a>
+                <a href="grades-table.html" class="menu-item">
+                    <span class="icon">
+                        <img src="Assets/icons/grade.svg" alt="" srcset="">
+                    </span> Calificaciones
+                </a>
+                <a href="#" class="menu-item" id="classes-menu">
+                    <span class="icon">
+                        <img src="Assets/icons/books.svg" alt="" srcset="">
+                    </span> Clases
+                    <span class="dropdown-icon">▼</span>
+                </a>
+                <div class="submenu" id="classes-submenu">
+                    <a href="#">Inglés 🇬🇧</a>
+                    <a href="grades-table.html">Biología 🌿</a>
+                    <a href="#">Educación Física 🏀</a>
+                </div>
+                <a href="help-center.html" class="menu-item">
+                    <span class="icon">
+                        <img src="Assets/icons/help.svg" alt="" srcset="">
+                    </span> Ayuda
+                </a>
+            </nav>
+        </div>
+
+        <div class="bottom-menu">
+            <a href="settings.html" class="menu-item">
+                <span class="icon">
+                    <img src="Assets/icons/settings.svg" alt="" srcset="">
+                </span> Configuración
+            </a>
+            <a href="#" class="menu-item">
+                <span class="icon">
+                    <img src="Assets/icons/notification.svg" alt="" srcset="">
+                </span> Notificaciones
+                <span class="badge">10</span>
+            </a>
+        </div>
+    </div>
+    <!-- Contenido principal -->
+    <div class="container">
+        <div class="header">
+            <h2>Biología - 3ro C</h2>
+            <div>
+                <button class="btn-primary" onclick="exportToExcel()">Exportar en EXCEL</button>
+                <button class="btn-secondary" onclick="exportToPDF()">Exportar en PDF</button>
+            </div>
+        </div>
+        <table id="gradeTable">
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Nombre</th>
+                    <th>1er periodo</th>
+                    <th>2do periodo</th>
+                    <th>3er periodo</th>
+                    <th>4to periodo</th>
+                    <th>Promedio final</th>
+                    <th>Estado</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Table body will be filled by JavaScript -->
+            </tbody>
+        </table>
+    </div>
+
+
+    <script src="Scripts/grades-table.js"></script>
+</body>
+
+</html>

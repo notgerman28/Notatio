@@ -1,0 +1,473 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0%;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    font-family: 'Poppins', sans-serif;
+    background: #EDEDED;
+}
+
+/* Navbar superior */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f8f9fa;
+    padding: 15px 20px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 2;
+}
+
+.navbar .logo {
+    font-size: 20px;
+    font-weight: bold;
+    color: #1A618E;
+}
+
+.navbar .avatar {
+    display: flex;
+    align-items: center;
+}
+
+.navbar .avatar span {
+    font-size: 24px;
+    margin-right: 10px;
+}
+
+.navbar .avatar p {
+    margin: 0;
+    font-size: 16px;
+    color: #2c3e50;
+}
+
+
+
+/* Estilos para el sidebar */
+.sidebar {
+    position: fixed;
+    top: 60px;
+    /* Debajo del navbar */
+    width: 250px;
+    height: calc(100vh - 60px);
+    /* Restando la altura del navbar */
+    background-color: #f8f9fa;
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* Distribuye elementos arriba y abajo */
+}
+
+.user-info {
+    padding: 15px;
+    background-color: #e9ecef;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.menu-item {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    color: #2c3e50;
+    text-decoration: none;
+    transition: background-color 0.3s;
+    font-size: 15px;
+}
+
+.menu-item:hover {
+    background-color: #e9ecef;
+}
+
+.menu-item .icon {
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+.submenu {
+    margin-left: 20px;
+    display: none;
+
+}
+
+.submenu.active {
+    display: block;
+}
+
+.submenu a {
+    display: block;
+    padding: 5px 10px;
+    color: #2c3e50;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.badge {
+    background-color: #dc3545;
+    color: white;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    margin-left: 5px;
+    line-height: 1;
+    padding: 0;
+}
+
+.dropdown-icon {
+    margin-left: auto;
+}
+
+/* Sección para el menú principal */
+.menu-top {
+    flex-grow: 1;
+    /* Ocupa todo el espacio disponible */
+}
+
+/* Configuración del menú inferior */
+.bottom-menu {
+    padding-top: 10px;
+    border-top: 1px solid #ddd;
+    /* Agrega una separación visual */
+    position: relative;
+    bottom: 0rem;
+}
+
+/* Centro de ayuda contenedor principal */
+.helpcenter {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 62%;
+    top: 56%;
+    width: 1000px;
+    height: 600px;
+    padding: 5px;
+}
+
+/* Titulo de centro de ayuda */
+.helpcenter-h1 {
+    position: relative;
+    top: 20px;
+    color: #1A618E;
+    font-weight: 600;
+    font-size: 27px
+}
+
+/* Input para buscar problema */
+.helpcenter .searchsolutionItems input {
+    position: relative;
+    top: 28px;
+    width: 706px;
+    height: 46px;
+    border: none;
+
+    font-size: 16px;
+    padding: 0px 0px 0px 20px;
+    font-family: 'Poppins', sans-serif;
+    outline: none;
+    border-radius: 4px;
+    border: 2px solid #1A618E;
+
+}
+
+/* Boton para buscar soluciones */
+.helpcenter .searchsolutionItems button {
+    position: relative;
+    top: 28px;
+    left: 5px;
+    border: none;
+    color: white;
+    border-radius: 4px;
+    background: #1A618E;
+    width: 190px;
+    height: 43px;
+    font-weight: 500;
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+}
+
+.helpcenter .searchsolutionItems button:hover {
+    background: #094971;
+
+}
+
+.div-contend-first {
+    position: relative;
+    top: 50px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+
+}
+
+.administratorproblemsContend {
+    position: relative;
+    background: #fff;
+    border-radius: 4px;
+    border: none;
+    width: 523px;
+    height: 190px;
+    display: grid;
+    border-radius: 4px;
+
+}
+
+.administratorproblemsContend h1 {
+    position: relative;
+    font-size: 17px;
+    color: black;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    bottom: 180px;
+    left: 250px;
+
+}
+
+.administratorproblemsContend p {
+    position: relative;
+    bottom: 173px;
+    left: 250px;
+    font-size: 12px;
+    font-weight: 500;
+    color: #787979;
+}
+
+.administratorproblemsContend button {
+    position: relative;
+    bottom: 160px;
+    left: 250px;
+    background: #1A618E;
+    color: white;
+    border: none;
+    font-weight: 600;
+    border-radius: 4px;
+    width: 151px;
+    height: 35px;
+    font-family: 'Poppins', sans-serif;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+}
+
+.administratorproblemsContend button:hover {
+    background: #094971;
+}
+
+.administratorproblemsContend img {
+    position: relative;
+    left: 20px;
+    object-fit: cover;
+    width: 202px;
+    height: 226px;
+    bottom: 10px;
+
+}
+
+.commonQuestionContend {
+    position: relative;
+    bottom: 190px;
+    background: #fff;
+    border-radius: 4px;
+    border: none;
+    width: 523px;
+    height: 190px;
+    display: grid;
+    border-radius: 4px;
+}
+
+.commonQuestionContend img {
+    position: relative;
+    left: 20px;
+    top: 10px;
+    object-fit: cover;
+    width: 182px;
+    height: 178px;
+}
+
+.commonQuestionContend button {
+    position: relative;
+    bottom: 110px;
+    left: 250px;
+    background: #1A618E;
+    color: white;
+    border: none;
+    font-weight: 600;
+    border-radius: 4px;
+    width: 151px;
+    height: 35px;
+    font-family: 'Poppins', sans-serif;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+}
+
+.commonQuestionContend button:hover {
+    background: #094971;
+}
+
+.commonQuestionContend h1 {
+    position: relative;
+    font-size: 17px;
+    color: black;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    bottom: 135px;
+    left: 250px;
+}
+
+.commonQuestionContend p {
+    position: relative;
+    bottom: 125px;
+    left: 250px;
+    font-size: 12px;
+    font-weight: 500;
+    color: #787979;
+}
+
+.requestsolutionContend {
+    position: relative;
+    left: -75px;
+    width: 359px;
+    height: 405px;
+    background: #fff;
+    border-radius: 4px;
+    border: none;
+    display: grid;
+    border-radius: 4px;
+}
+
+.requestsolutionContend h1 {
+    position: relative;
+    top: 30px;
+    text-align: center;
+    margin: 0% auto;
+    font-size: 25px;
+}
+
+.text-messeger {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 93%;
+    text-align: center;
+    font-size: 14px;
+    color: red;
+    font-weight: 600;
+
+}
+
+
+.div-contend-inputsItems {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 45%;
+    overflow: none;
+}
+
+.div-contend-inputsItems textarea {
+    position: relative;
+    width: 280px;
+    height: 65px;
+    top: 15px;
+    border-radius: 4px;
+    background: transparent;
+    border: 1.5px solid #c6c6c6;
+    outline: none;
+    font-family: 'Poppins', sans-serif;
+    padding: 5px;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+textarea::placeholder {
+    font-size: 14px;
+}
+
+.requestsolutionContend button {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 85%;
+    color: white;
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+    border: none;
+    background: #1A618E;
+    font-weight: 600;
+    width: 281px;
+    height: 50px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+
+}
+
+.requestsolutionContend button:hover {
+    background: #094971;
+}
+
+.div-contend-inputsItems input {
+    width: 280px;
+    margin-top: 15px;
+    background: transparent;
+    border: 1.5px solid #c6c6c6;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    padding: 5px;
+    border-radius: 4px;
+    outline: none;
+    transition: all 1s ease-in-out;
+}
+
+.div-error-password-seguriy {
+    position: relative;
+    bottom: 500px;
+    width: 300px;
+    height: 110px;
+    color: white;
+    background: rgb(201, 67, 67);
+    border-radius: 4px;
+    left: 600%;
+    transition: all 1.5s ease-in-out;
+}
+
+.div-error-password-seguriy h1 {
+    position: relative;
+    top: 7px;
+    left: 10px;
+    font-size: 17px;
+    margin-left: 11px;
+    margin-top: 10px;
+}
+
+.div-error-password-seguriy p {
+    position: relative;
+    left: 10px;
+    font-size: 12px;
+    margin-left: 11px;
+    margin-top: 12px;
+}
+
+.bi-x-square-fill {
+    position: relative;
+    left: 260px;
+    transition: all.5s ease-in-out;
+    bottom: 70px;
+
+}

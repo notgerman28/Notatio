@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notatio. | Dashboard Docente</title>
+    <link rel="stylesheet" href="Styles/dashboard.css">
+</head>
+
+<body>
+
+    <div class="navbar">
+        <div class="logo">
+            Notatio.
+        </div>
+        <div class="avatar">
+            <span>
+                <img src="Assets/icons/user.svg" alt="" srcset="">
+            </span>
+        </div>
+    </div>
+
+    <div class="sidebar">
+        <div class="menu-top">
+            <div class="user-info">
+                Docente: Usuario
+            </div>
+            <nav>
+                <a href="index-app.html" class="menu-item">
+                    <span class="icon"><img src="Assets/icons/home.svg" alt="" srcset="">
+                    </span> Inicio
+                </a>
+                <a href="dashboard.html" class="menu-item">
+                    <span class="icon">
+                        <img src="Assets/icons/dashboard.svg" alt="" srcset="">
+                    </span> Panel de control
+                </a>
+                <a href="grades-table.html" class="menu-item">
+                    <span class="icon">
+                        <img src="Assets/icons/grade.svg" alt="" srcset="">
+                    </span> Calificaciones
+                </a>
+                <a href="#" class="menu-item" id="classes-menu">
+                    <span class="icon">
+                        <img src="Assets/icons/books.svg" alt="" srcset="">
+                    </span> Clases
+                    <span class="dropdown-icon">▼</span>
+                </a>
+                <div class="submenu" id="classes-submenu">
+                    <a href="#">Inglés 🇬🇧</a>
+                    <a href="grades-table.html">Biología 🌿</a>
+                    <a href="#">Educación Física 🏀</a>
+                </div>
+                <a href="help-center.html" class="menu-item">
+                    <span class="icon">
+                        <img src="Assets/icons/help.svg" alt="" srcset="">
+                    </span> Ayuda
+                </a>
+            </nav>
+        </div>
+
+        <div class="bottom-menu">
+            <a href="settings.html" class="menu-item">
+                <span class="icon">
+                    <img src="Assets/icons/settings.svg" alt="" srcset="">
+                </span> Configuración
+            </a>
+            <a href="#" class="menu-item">
+                <span class="icon">
+                    <img src="Assets/icons/notification.svg" alt="" srcset="">
+                </span> Notificaciones
+                <span class="badge">10</span>
+            </a>
+        </div>
+    </div>
+
+
+    <div class="content">
+        <div class="dashboard-container">
+            <div class="panel-control">
+                <h2>Panel de Control</h2>
+                <hr class="section-divider">
+                <div class="stats">
+                    <div class="stat-item1">
+                        <div class="stat-circle">566/700</div>
+                        <div class="stat-label">Total de Estudiantes</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-circle">10</div>
+                        <div class="stat-label">Tus Clases</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-circle">8</div>
+                        <div class="stat-label">Proyectos</div>
+                    </div>
+                    <div class="stat-item4">
+                        <div class="stat-circle">30%</div>
+                        <div class="stat-label">Personas Evaludadas</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cursos">
+                <h2>Cursos</h2>
+                <hr class="section-divider">
+                <div class="cursos-grid">
+                    <div class="curso curso-1ro">1RO A Nombre del curso</div>
+                    <div class="curso curso-1ro-b">1RO B Nombre del curso</div>
+                    <div class="curso curso-1ro-c">1RO C Nombre del curso</div>
+                    <div class="curso curso-2do">2DO A Nombre del curso</div>
+                    <div class="curso curso-2do-b">2DO B Nombre del curso</div>
+                    <div class="curso curso-2do-c">2DO C Nombre del curso</div>
+                </div>
+                <div class="todos-cursos">
+                    <a href="all-classes.html">Todos los cursos</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <script src="Scripts/dashboard.js">
+    </script>
+</body>
+
+</html>

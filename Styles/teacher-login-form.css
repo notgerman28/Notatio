@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    height: 100vh;
+    background: #EDEDED;
+    overflow: hidden;
+}
+
+/* Header */
+header {
+    background: #f4f4f9;
+    height: 60px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+
+.notatio {
+    font-size: 20px;
+    font-weight: bold;
+    color: #1A628F;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.logo {
+    height: 70px;
+    margin-right: -10px;
+}
+
+nav ul {
+    margin-top: 20px;
+    display: flex;
+    gap: 30px;
+    margin-right: 80px;
+}
+
+.div-form-sesion {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+    width: 450px;
+    height: 350px;
+    border-radius: 4px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 1, 0.2);
+
+}
+
+.div-form-sesion h1 {
+    text-align: center;
+    position: relative;
+    font-size: 25px;
+    top: 39px;
+}
+
+.div-form-sesion form {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 43%
+}
+
+.div-form-sesion input {
+    position: relative;
+    margin-top: 25px;
+    background: transparent;
+    border: solid 1px #A19393;
+    padding: 7px;
+    border-radius: 4px;
+    width: 350px;
+    outline: none;
+    top: 10px;
+    transition: all 1.5s ease-in-out;
+}
+
+.div-form-sesion button {
+    position: relative;
+    height: 45px;
+    top: 40px;
+    background: #1A618E;
+    color: white;
+    font-weight: 600;
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.link-register {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    left: 29%;
+    top: 88%;
+    font-size: 12px;
+    color: #ff0000;
+    text-align: center;
+}
+
+.div-error-password-seguriy {
+    position: relative;
+    top: 10px;
+    width: 300px;
+    height: 110px;
+    color: white;
+    background: rgb(201, 67, 67);
+    border-radius: 4px;
+    left: 600%;
+    transition: all 1s ease-in-out;
+    padding: 2px;
+}
+
+
+.div-error-password-seguriy h1 {
+    position: relative;
+    top: 7px;
+    left: 10px;
+    font-size: 17px;
+    margin-left: 11px;
+    margin-top: 10px;
+}
+
+.div-error-password-seguriy p {
+    position: relative;
+    left: 10px;
+    font-size: 12px;
+    margin-left: 11px;
+    margin-top: 12px;
+}
+
+.bi-x-square-fill {
+    position: relative;
+    left: 260px;
+    transition: all.5s ease-in-out;
+    bottom: 70px;
+
+}

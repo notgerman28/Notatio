@@ -1,0 +1,403 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+body {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #eeefef;
+}
+
+/* Navbar superior */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f8f9fa;
+    padding: 15px 20px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 2;
+}
+
+.navbar .logo {
+    font-size: 20px;
+    font-weight: bold;
+    color: #1A618E;
+}
+
+.navbar .avatar {
+    display: flex;
+    align-items: center;
+}
+
+.navbar .avatar span {
+    font-size: 24px;
+    margin-right: 10px;
+}
+
+.navbar .avatar p {
+    margin: 0;
+    font-size: 16px;
+    color: #2c3e50;
+}
+
+/* Estilos para el sidebar */
+.sidebar {
+    position: fixed;
+    top: 60px;
+    /* Debajo del navbar */
+    width: 250px;
+    height: calc(100vh - 60px);
+    /* Restando la altura del navbar */
+    background-color: #f8f9fa;
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    z-index: 1;
+    /* Distribuye elementos arriba y abajo */
+}
+
+.user-info {
+    padding: 15px;
+    background-color: #e9ecef;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.menu-item {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    color: #2c3e50;
+    text-decoration: none;
+    transition: background-color 0.3s;
+    font-size: 15px;
+}
+
+.menu-item:hover {
+    background-color: #e9ecef;
+}
+
+.menu-item .icon {
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+.submenu {
+    margin-left: 20px;
+    display: none;
+
+}
+
+.submenu.active {
+    display: block;
+}
+
+.submenu a {
+    display: block;
+    padding: 5px 10px;
+    color: #2c3e50;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.badge {
+    background-color: #dc3545;
+    color: white;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    margin-left: 5px;
+    line-height: 1;
+    padding: 0;
+}
+
+.dropdown-icon {
+    margin-left: auto;
+}
+
+/* Sección para el menú principal */
+.menu-top {
+    flex-grow: 1;
+    /* Ocupa todo el espacio disponible */
+}
+
+/* Configuración del menú inferior */
+.bottom-menu {
+    padding-top: 10px;
+    border-top: 1px solid #ddd;
+    /* Agrega una separación visual */
+    position: relative;
+    bottom: 2rem;
+}
+
+
+/* Ajustes del contenido */
+.content {
+    margin-left: 318px;
+    margin-top: 65px;
+    padding: 20px;
+}
+
+.container {
+    width: 900px;
+    position: relative;
+    top: 100px;
+    left: 6rem;
+    margin: 0 auto;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    width: 106%;
+    box-shadow: -1px 4px 6px -6px rgba(0, 0, 0, 0.75);
+}
+
+h2 {
+    color: #1A628F;
+    margin: 0;
+}
+
+.btn {
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btn-primary {
+    background-color: #1A628F;
+    color: white;
+    border: none;
+    width: 160px;
+    height: 40px;
+    border-radius: 5px;
+    font-size: 15px;
+    cursor: pointer;
+    font-family: "Poppins", Arial, Helvetica, sans-serif;
+}
+
+.btn-secondary {
+    background-color: white;
+    color: #1A628F;
+    border: 1px solid #1A628F;
+    width: 160px;
+    height: 40px;
+    border: solid 3px;
+    border-radius: 5px;
+    font-size: 15px;
+    cursor: pointer;
+    font-family: "Poppins", Arial, Helvetica, sans-serif;
+}
+
+table {
+    width: 110.3%;
+    border-collapse: collapse;
+    background-color: #ffffff;
+    font-size: 14px;
+}
+
+th,
+td {
+    border: 1px solid #d1d5db;
+    padding: 8px;
+    text-align: center;
+}
+
+th {
+    color: #1A628F;
+
+}
+
+thead {
+    background-color: #ffffff;
+}
+
+.aprobado {
+    background-color: #d7fcd7;
+    border-radius: 111px;
+    color: #20a120;
+    font-weight: bold;
+    padding: 4px;
+    position: relative;
+
+}
+
+.aprobado-warning {
+    background-color: #fcf1a3;
+    color: #e3ae6c;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 111px;
+    padding: 4px;
+    position: relative;
+
+}
+
+.reprobado {
+    background-color: #f9b0b0;
+    color: #d76262;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 111px;
+    padding: 4px;
+    position: relative;
+
+}
+
+/* @media (max-width: 768px) {
+    .container {
+        width: 100%;
+        overflow-x: auto;
+    }
+
+    table {
+        width: 100%;
+    }
+
+    .header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    h2 {
+        font-size: 1.5em;
+        margin-bottom: 10px;
+    }
+
+    .btn {
+        padding: 6px 12px;
+        font-size: 0.9em;
+    }
+
+    th,
+    td {
+        padding: 4px;
+        font-size: 0.8em;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        padding: 10px;
+    }
+
+    h2 {
+        font-size: 1.2em;
+    }
+
+    .btn {
+        padding: 5px 10px;
+        font-size: 0.8em;
+    }
+
+    th,
+    td {
+        padding: 4px;
+        font-size: 0.8em;
+    }
+
+    table {
+        width: 600px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .sidebar {
+        width: 200px;
+    }
+
+    .content {
+        margin-left: 220px;
+    }
+}
+
+@media (max-width: 992px) {
+    .sidebar {
+        width: 60px;
+        padding: 10px;
+    }
+
+    .sidebar .menu-item span,
+    .sidebar .user-info {
+        display: none;
+    }
+
+    .content {
+        margin-left: 80px;
+    }
+
+    .header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .btn {
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        padding: 10px;
+    }
+
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+
+    .content {
+        margin-left: 0;
+        margin-top: 120px;
+    }
+
+    .header {
+        width: 100%;
+    }
+
+    table {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar .logo {
+        font-size: 16px;
+    }
+
+    .content {
+        padding: 10px;
+    }
+
+    .header h2 {
+        font-size: 20px;
+    }
+
+    .btn {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    table {
+        font-size: 12px;
+    }
+} */

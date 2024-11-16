@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notatio</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="icon" type="image/png" href="Assets/images/Notatio_logo.jpg">
+    <link rel="stylesheet" href="Styles/landing-page.css">
+</head>
+
+<body>
+
+    <header>
+        <a href="Index.html" class="notatio">
+            <img src="Assets/images/Notatio_fondo.png" alt="Logo" class="logo">
+            Notatio.
+        </a>
+        <nav>
+            <ul>
+                <li><a href="Index.html">Inicio</a></li>
+                <li><a href="#about-section">Nosotros</a></li>
+                <li><a href="#prices-section">Precios</a></li>
+                <li><a href="#contacts">Contactos</a></li>
+            </ul>
+        </nav>
+        <a href="teacher-login-form.html" class="Login">Iniciar sesión</a>
+    </header>
+
+    <section class="content-section">
+        <div class="text-content">
+            <h1>Bienvenidos al programa <span>Notatio</span> impulsado por innovación</h1>
+            <p>Notatio representa la vanguardia en gestión educativa, diseñado para transformar la manera en que
+                docentes interactúan con la información académica, combinando la potencia
+                de la tecnología más avanzada con una interfaz intuitiva.</p>
+            <a href="teacher-register-form.html" class="btn">Empezar ahora</a>
+            <button class="ntb" id="tutorialButton">
+                Tutorial <i class='bx bx-log-in-circle bx-flip-vertical' style='color:#1a628f; font-size: 24px;'></i>
+            </button>
+
+            <div id="videoModal" class="modal">
+                <div class="modal-content">
+                    <span class="close" id="closeModal">&times;</span>
+                    <h2>Tutorial <span>Notatio</span></h2>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen>
+                    </iframe>
+                </div>
+            </div>
+        </div>
+        <div class="image-grid">
+            <div class="image image-1">
+                <img src="Assets/images/pexels-buro-millennial-636760-1438081.jpg" alt="">
+            </div>
+            <div class="image image-2">
+                <img src="Assets/images/pexels-instasky-28867629.jpg" alt="">
+            </div>
+            <div class="image image-3">
+                <img src="Assets/images/pexels-anastasiya-gepp-654466-1462630.jpg" alt="">
+            </div>
+            <div class="image image-4">
+                <img src="Assets/images/pexels-keira-burton-6147053.jpg" alt="">
+            </div>
+        </div>
+    </section>
+
+    <section class="features-section">
+        <div class="feature">
+            <div class="icon">⏳</div>
+            <p>Horas ahorradas</p>
+        </div>
+        <div class="feature">
+            <div class="icon">⚙️</div>
+            <p>Optimización</p>
+        </div>
+        <div class="feature">
+            <div class="icon">🔒</div>
+            <p>Seguridad</p>
+        </div>
+        <div class="feature">
+            <div class="icon">💻</div>
+            <p>Facilidad de uso</p>
+        </div>
+    </section>
+
+    <section class="about-section" id="about-section">
+        <div class="text-content">
+            <h2>Sobre <span>Nosotros:</span></h2>
+            <p>En Notatio, somos un equipo apasionado de educadores, desarrolladores y visionarios unidos por un
+                objetivo común: revolucionar la gestión educativa. Nacimos de la convicción de que la tecnología puede y
+                debe servir para mejorar la calidad de la educación.</p>
+            <a href="about-notatio.html">
+                <button class="btn">Más Información</button>
+            </a>
+
+        </div>
+        <div class="image-container">
+            <img src="Assets/images/Imagen_nosotros.jpg" alt="Nosotros">
+        </div>
+    </section>
+
+    <div class="plan-container" id="prices-section">
+        <div class="plan-card">
+            <h3>Plan Básico</h3>
+            <p class="price">$14.99</p>
+            <p id="blur">11 meses</p>
+            <ul>
+                <li class="wrong">Maximo 3 docentes.</li>
+                <li class="correct">Acceso a las funciones.</li>
+                <li class="wrong">Exportar más de 1 archivo.</li>
+                <li class="wrong">Agregar más de 3 clases.</li>
+            </ul>
+            <button class="plan">Contratar plan</button>
+        </div>
+
+        <div class="plan-card">
+            <h3>Plan Estándar</h3>
+            <p class="price">$24.99</p>
+            <p id="blur">22 meses</p>
+            <ul>
+                <li class="wrong">Maximo 5 docentes.</li>
+                <li class="correct">Acceso a las funciones.</li>
+                <li class="correct">Exportar maximo 5 archivos.</li>
+                <li class="wrong">Agregar más de 8 clases.</li>
+            </ul>
+            <button class="plan">Contratar plan</button>
+        </div>
+
+        <div class="plan-card">
+            <h3>Plan Completo</h3>
+            <p class="price">$49.99</p>
+            <p id="blur">33 meses</p>
+            <ul>
+                <li class="correct">Sin límites de docentes.</li>
+                <li class="correct">Acceso a las funciones.</li>
+                <li class="correct">Exportar maximo 10 archivos.</li>
+                <li class="correct">Sin límites de clases.</li>
+            </ul>
+            <button class="plan">Contratar plan</button>
+        </div>
+    </div>
+
+    <!-- Banner de Cookies -->
+    <div id="cookie-banner" class="cookie-banner">
+        <div class="cookie-content">
+            <h3>¡Adivina qué? ¡Cookies!</h3>
+            <p>Usamos cookies esenciales para ofrecerte una mejor experiencia en nuestro sitio web. Nos gustaría usar
+                otras cookies para analizar el rendimiento de nuestro sitio web y personalizar anuncios, pero solo si lo
+                aceptas. Aprende más sobre tus opciones en nuestra <a href="#">política de cookies</a>.</p>
+            <div class="cookie-buttons">
+                <button id="accept-all" class="cookie-btn">Aceptar todas</button>
+                <button id="manage-cookies" class="cookie-btn manage">Gestionar cookies</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- foooter -->
+    <footer id="contacts">
+        <div class="footer-container">
+            <div class="footer-left">
+                <div class="logo">Notatio.</div>
+                <button class="contact-btn">Empieza Ahora</button>
+            </div>
+            <div class="line-separator"></div>
+            <div class="footer-center">
+                <ul>
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Nosotros</a></li>
+                    <li><a href="#">Precios</a></li>
+                    <li><a href="#">Contactos</a></li>
+                </ul>
+            </div>
+            <div class="footer-right">
+                <div class="line-separator"></div>
+                <div class="social-icons">
+                    <a href="#"><i class='bx bxl-instagram'></i></a>
+                    <a href="#"><i class='bx bxl-twitter'></i></a>
+                    <a href="#"><i class='bx bxl-youtube'></i></a>
+                    <a href="#"><i class='bx bxl-facebook-circle'></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-wave"></div>
+    </footer>
+
+    <script src="Scripts/landing-page-scritpt.js"></script>
+
+</body>
+
+</html>

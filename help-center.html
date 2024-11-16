@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Styles/help-center.css">
+    <title>Notatio. | Centro de ayuda</title>
+</head>
+
+<body>
+    <!-- Navbar superior -->
+    <div class="navbar">
+        <div class="logo">
+            Notatio.
+        </div>
+        <div class="avatar">
+            <span>
+                <img src="Assets/icons/user.svg" alt="" srcset="">
+            </span>
+        </div>
+    </div>
+    <!-- Menú lateral -->
+    <div class="sidebar">
+        <div class="menu-top">
+            <div class="user-info">
+                Docente: Usuario
+            </div>
+            <nav>
+                <a href="index-app.html" class="menu-item">
+                    <span class="icon"><img src="Assets/icons/home.svg" alt="" srcset="">
+                    </span> Inicio
+                </a>
+                <a href="dashboard.html" class="menu-item">
+                    <span class="icon">
+                        <img src="Assets/icons/dashboard.svg" alt="" srcset="">
+                    </span> Panel de control
+                </a>
+                <a href="grades-table.html" class="menu-item">
+                    <span class="icon">
+                        <img src="Assets/icons/grade.svg" alt="" srcset="">
+                    </span> Calificaciones
+                </a>
+                <a href="#" class="menu-item" id="classes-menu">
+                    <span class="icon">
+                        <img src="Assets/icons/books.svg" alt="" srcset="">
+                    </span> Clases
+                    <span class="dropdown-icon">▼</span>
+                </a>
+                <div class="submenu" id="classes-submenu">
+                    <a href="#">Inglés 🇬🇧</a>
+                    <a href="grades-table.html">Biología 🌿</a>
+                    <a href="#">Educación Física 🏀</a>
+                </div>
+                <a href="help-center.html" class="menu-item">
+                    <span class="icon">
+                        <img src="Assets/icons/help.svg" alt="" srcset="">
+                    </span> Ayuda
+                </a>
+            </nav>
+        </div>
+
+        <div class="bottom-menu">
+            <a href="settings.html" class="menu-item">
+                <span class="icon">
+                    <img src="Assets/icons/settings.svg" alt="" srcset="">
+                </span> Configuración
+            </a>
+            <a href="#" class="menu-item">
+                <span class="icon">
+                    <img src="Assets/icons/notification.svg" alt="" srcset="">
+                </span> Notificaciones
+                <span class="badge">10</span>
+            </a>
+        </div>
+    </div>
+    <div class="helpcenter">
+        <h1 class="helpcenter-h1">Centro de Ayuda</h1>
+        <!--Contenedor Buscador de problemas-->
+        <div class="searchsolutionItems">
+            <input type="text" name="searchsolutionInput_name" id="searchsolutionInput-id"
+                placeholder="¿Cuál es el problema que estás experimentando?">
+            <button class="searchsolution-btn">Buscar Solucion</button>
+        </div>
+        <div class="div-contend-first">
+            <!--Contenedro para problemas de tipo usuario-->
+            <div class="administratorproblemsContend">
+                <img src="Assets/images/bug-fixing-46.svg">
+                <h1>Problemas Administrativos</h1>
+                <p>Si tienes una cuenta administrativa, esta <br> opción está diseñada ti.</p>
+                <button>Solucionar ahora</button>
+            </div>
+            <!--Contenedor para formulario de soluciones personalizados-->
+            <div class="requestsolutionContend">
+                <form action="" id="formhelpCenter">
+                    <h1>Solicitar Solución</h1>
+                    <div class="div-contend-inputsItems">
+                        <input type="text" id="name" class="input-name" placeholder="Nombre Completo...">
+                        <input type="email" id="email" class="input-email" placeholder="Correo electrónico...">
+                        <input type="password" id="password-segurity" class="input-password"
+                            placeholder="Contraseña de seguridad...">
+                        <textarea name="text" id="textarea-input" placeholder="Describe tu problema..."></textarea>
+                    </div>
+                    <button id="send-problems">Enviar mi Problema</button>
+                    <span class="text-messeger" id="text-messeger"></span>
+                </form>
+            </div>
+            <!--Contenedor para preguntas mas frecuentes-->
+            <div class="commonQuestionContend">
+                <img src="Assets/images/problem-solving-5-67.svg">
+                <h1>Preguntas frecuentes</h1>
+                <p>Consulta nuestras preguntas frecuentes <br>para encontrar respuestas claras.</p>
+                <button>Revisar preguntas</button>
+            </div>
+            <!--Contenedor de error de contraseña-->
+            <div class="div-error-password-seguriy" id="div-error-password-seguriy">
+                <h1>Falta de caracteres</h1>
+                <p>La contraseña de seguridad debe<br>contener exactamente 9 caracteres.</p>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    class="bi bi-x-square-fill" id="x-displayErrorWimdows" viewBox="0 0 16 16">
+                    <path
+                        d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zm3.354 4.646L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 1 1 .708-.708" />
+                </svg>
+            </div>
+        </div>
+    </div>
+    <script src="Scripts/help-center.js"></script>
+</body>
+
+</html>

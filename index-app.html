@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notatio. | Inicio
+    </title>
+    <link rel="stylesheet" href="Styles/index-app.css">
+</head>
+
+<body>
+
+    <!-- Navbar superior -->
+    <div class="navbar">
+        <div class="logo">
+            Notatio.
+        </div>
+        <div class="avatar">
+            <span>
+                <img src="Assets/icons/user.svg" alt="" srcset="">
+            </span>
+        </div>
+    </div>
+
+    <!-- Menú lateral -->
+    <div class="sidebar">
+        <div class="menu-top">
+            <div class="user-info">
+                Docente: Usuario
+            </div>
+            <nav>
+                <a href="index-app.html" class="menu-item">
+                    <span class="icon"><img src="Assets/icons/home.svg" alt="" srcset="">
+                    </span> Inicio
+                </a>
+                <a href="dashboard.html" class="menu-item">
+                    <span class="icon">
+                        <img src="Assets/icons/dashboard.svg" alt="" srcset="">
+                    </span> Panel de control
+                </a>
+                <a href="grades-table.html" class="menu-item">
+                    <span class="icon">
+                        <img src="Assets/icons/grade.svg" alt="" srcset="">
+                    </span> Calificaciones
+                </a>
+                <a href="#" class="menu-item" id="classes-menu">
+                    <span class="icon">
+                        <img src="Assets/icons/books.svg" alt="" srcset="">
+                    </span> Clases
+                    <span class="dropdown-icon">▼</span>
+                </a>
+                <div class="submenu" id="classes-submenu">
+                    <a href="#">Inglés 🇬🇧</a>
+                    <a href="grades-table.html">Biología 🌿</a>
+                    <a href="#">Educación Física 🏀</a>
+                </div>
+                <a href="help-center.html" class="menu-item">
+                    <span class="icon">
+                        <img src="Assets/icons/help.svg" alt="" srcset="">
+                    </span> Ayuda
+                </a>
+            </nav>
+        </div>
+
+        <div class="bottom-menu">
+            <a href="settings.html" class="menu-item">
+                <span class="icon">
+                    <img src="Assets/icons/settings.svg" alt="" srcset="">
+                </span> Configuración
+            </a>
+            <a href="#" class="menu-item">
+                <span class="icon">
+                    <img src="Assets/icons/notification.svg" alt="" srcset="">
+                </span> Notificaciones
+                <span class="badge">10</span>
+            </a>
+        </div>
+    </div>
+
+    <!-- Contenido principal -->
+    <div class="content">
+        <div class="content">
+            <div class="welcome-card" id="welcomeCard">
+                <h2>¡Bienvenido a Politécnico ITLA! 👋</h2>
+                <p id="welcomeText">Estamos felices de verte.</p>
+                <p id="tutorialText">Si necesitas una guía sobre el uso de Notatio, pasa a la siguiente diapositiva.</p>
+                <div class="slider-controls">
+                    <button class="prev-slide-button" id="prevSlideButton">
+                        <img src="Assets/icons/left-arrow.svg" alt="Previous">
+                    </button>
+                    <div class="dots">
+                        <span class="dot active"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                    </div>
+                    <button class="next-slide-button" id="nextSlideButton">
+                        <img src="Assets/icons/right-arrow.svg" alt="Next">
+                    </button>
+                </div>
+            </div>
+            <div class="classes-section">
+                <h3 class="classes-grid-title">Clases:</h3>
+                <div class="classes-grid">
+                    <div class="class-card">
+                        <img src="/Assets/images/english-class-thumbnail.jpg" alt="English Class">
+                        <h4>Inglés 🇬🇧</h4>
+                        <a href="#" class="open-grades">
+                            <p class="open-grades">Ver calificaciones</p>
+                        </a>
+                    </div>
+
+                    <div class="class-card">
+                        <a href="grades-table.html" style="text-decoration: none;">
+                            <img src="Assets/images/biology-class-thumbnail.jpg" alt="Clase">
+                        </a>
+                        <h4>Biología 🌿</h4>
+                        <a href="grades-table.html" class="open-grades">
+                            <p class="open-grades">Ver calificaciones</p>
+                        </a>
+                    </div>
+
+                    <div class="class-card">
+                        <img src="/Assets/images/sports-class-thumbnail.jpg" alt="Clase">
+                        <h4>Educación Física 🏀</h4>
+                        <a href="#" class="open-grades">
+                            <p class="open-grades">Ver calificaciones</p>
+                        </a>
+                    </div>
+
+                    <div class="class-card">
+                        <img src="Assets/images/literature-class-thumbnail.jpg" alt="Clase">
+                        <h4>Literatura 📙</h4>
+                        <a href="#" class="open-grades">
+                            <p class="open-grades">Ver calificaciones</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="Scripts/app-index.js">
+    </script>
+</body>
+
+</html>
